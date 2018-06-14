@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Laboratory work 1</title>
+    <script>alert("Я – JavaScript!")</script>
+</head>
+<body>
+<script src="main.js"></script>
+<input type="submit" value="Запустить prompts" onclick="runAllPrompts()">
+<br><br>
+<input title="js" type="text" id="text_js_name" placeholder="Официальное название JavaScript" style="width:250px">
+<input type="submit" value="Проверить" id="check_js_name" onclick="checkJavaScriptName()">
+<br>
+<input title="js" type="text" id="number" placeholder="Число" style="width:70px">
+<input type="submit" value="Определить знак" id="detect" onclick="detectTheSign()" style="width:fit-content">
+<br><br>
+<h5>Логин</h5>
+<input title="js" type="text" id="login" placeholder="Логин" style="width:70px" onkeydown="onKeyDownLoginPassword(event.keyCode, this.value)">
+<h5 style="visibility: hidden" id="password_h5">Пароль</h5>
+<input title="js" type="text" id="password" placeholder="Пароль" style="width:70px; visibility: hidden" onkeydown="onKeyDownLoginPassword(event.keyCode, this.value)">
+<input type="submit" value="Вход" id="sign_in" onclick="signIn()" style="width:fit-content">
+<input type="submit" value="Отменить" id="cancel" onclick="cancelSignIn()" style="width:fit-content">
+</body>
+</html>
